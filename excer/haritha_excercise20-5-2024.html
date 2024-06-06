@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question 7</title>
+</head>
+<body   style="font-size: 20px;">
+    <script>
+        let flim=["Falimy","Premalu","Aavesham","Manjummel Boys","Kannur squad","Neru","Garudan","Abraham Ozlar"];
+        document.write("<br>Flims in the list :",flim);
+        document.write("<br><br>Is Aavesham is iin tis list : ",flim.includes("Aavesham"));
+
+
+        document.write("<br><br>Q1  Sorting the array in Decending order :<br>");
+        document.write("<br>Sorted array: ",flim.sort());
+        document.write("<br>Sorted array in Decending order: ",flim.reverse());
+
+
+        document.write("<br><br>Q2 Compare “Hello World” & “hEllO World”<br>");
+        let x="Hello World";
+        let y="hEllO World";
+        document.write("<br>datatype of x : ",typeof x);
+        document.write("<br>datatype of y : ",typeof y);
+        let z=x==y;
+        document.write("<br>Comparision using == : "+z);
+        document.write("<br>Datatype : ",typeof z);
+        let z1=x===y;
+        document.write("<br>Comparision using === : "+z1);
+        document.write("<br>Datatype : ",typeof z1);
+
+        document.write("<br><br>Q3 Printing Statement:<br><br>");
+        let a1="\"I am ";
+        let a2=23;
+        let a3=" yrs of old and my brother is 10 yrs older to me.";
+        let a4=" He is now ";
+        let a5=a2+10;
+        let a6="years old.\"";
+        a7=a1+a2+a3+a4+" "+a5+" "+a6;
+        document.write(a7)
+
+
+        document.write("<br><br>Q4  Printing Statement:<br><br>");
+        let fname="Haritha ";
+        let lname="A Rajan";
+        let place="trivandrum";
+
+        document.write(`\"My name is ${fname.toUpperCase()+lname.toUpperCase()} . I live in ${place.toUpperCase()}.\"`);
+
+        
+        document.write("<br><br>Q5  Removing Extention <br><br>");
+        let b1="Samplejs.js";
+        let b2=b1.slice(0,8);
+        document.write("file name : ",b1)
+        document.write("<br>After Slicing: ",b2)
+
+
+
+        document.write("<br><br>Q6 Product of two numbers<br><br>");
+        function mul1(x,y)
+        {
+            let z=x*y;
+            return z;
+        }
+
+        document.write("<br>value of a=5 and b=8");
+        let c1=mul1(5,8)
+        document.write("<br>Product of a and b : ",c1);
+
+
+        document.write("<br><br>Q7 Product of three numbers<br><br>");
+        function mul2(x,y,z)
+        {
+            let prod=x*y*z;
+            return prod;
+        }
+        document.write("value of a=7, b=10 and c=14");
+        let c2=mul2(7,10,14)
+        document.write("<br>product (a*b*c) : ",c2);
+
+        document.write("<br><br>Q8 value of(2*(20+30))  <br><br>");
+
+        function sum( a,b)
+        {
+            let c=a+b;
+            return c;
+        }
+        let val=sum(20,30);
+        val=val*2;
+        document.write("value of expression(2*(20+30)) : ",val)
+
+
+
+
+    </script>
+</body>
+</html>

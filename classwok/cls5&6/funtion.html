@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body style="font-size: 20px;">
+    <script>
+        function sum()
+        {
+        let a=14;
+        let b=21;
+        let c=a+b;
+        document.write(`<br>a=${a} and b=${b}`);
+        document.write("<br>Sum = ",c);
+        }
+
+
+        function sum1(x,y)
+        {
+            let z=x+y;
+            document.write("<br>sum : ",z);
+            
+        }
+        function sum2(x ,y)
+        {
+            let z=x+y;
+            return z;
+            
+        }
+
+
+
+        function sum3(x,y,z)
+        {
+            sum=x+y+z;
+            document.write("<br>sum : ",sum);
+        }
+        
+
+
+        document.write("Function <br>");
+        document.write("<br> Calling for first time : ");
+        sum();
+
+        document.write("<br><br> Calling for Second time :");
+        sum();
+
+        var i=10;
+        var j=20;
+        document.write("<br><br> Calling using arg (1) : ");
+        sum1(i,j)
+
+        var i=94;
+        var j=25;
+        document.write("<br><br> Calling using arg (2) : ");
+        sum1(i,j)
+
+        document.write("<br><br> Calling using arg (3): ");
+        sum1(10,50 );
+        
+        document.write("<br><br> Calling using arg (4): ");
+        sum1(17,58 );
+
+        document.write("<br><br>Calling with arg and retun values :");
+        let d=sum2(15,25);
+        document.write("<br>Sum = ",d);
+        let e= d*5;
+        document.write("<br>Sum*5 = ",e);
+
+
+
+        document.write("<br><br>Adding three para :");
+        var i=11;
+        var j=22;
+        var k=33;
+        document.write("<br><br>Sum of 3 values : ");
+        sum3(i,j,k);
+
+        document.write("<br><br>Sum of 3 values : ");
+        sum3(10,20,30);
+
+
+
+    </script>
+</body>
+</html>

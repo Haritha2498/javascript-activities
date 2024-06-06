@@ -1,0 +1,14 @@
+function fun1()
+{
+    let x=document.getElementById("id1").value;
+    x=Number.parseInt(x);
+    let y=x**2;
+    document.getElementById("pid1").innerHTML="Number="+x+"<br>Square = "+y;
+}
+function fun2()
+{
+    let x=document.getElementById("id1").value;
+    x=Number.parseInt(x);
+    let y=x*x*x;
+    document.getElementById("pid2").innerHTML="Number="+x+"<br>Cube = "+y;
+}

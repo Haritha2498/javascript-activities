@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area and Perimeter</title>
+    <script src="./s1.js"></script>
+</head>
+<body>
+    <script>
+        document.write("Area and perimeter of square :");
+            let l_s=10;
+            document.write("<br>length=",l_s);
+            let a1=area_s(l_s);
+            document.write("<br>Area=",a1);
+
+            let p1=peri_s(l_s);
+            document.write("<br>Perimeter of square =",p1);
+
+
+            document.write("<br><br>Area and perimeter of rectangle:");
+            let lr=10;
+            let br=20;
+            document.write(`<br>length= ${lr} breadth=${br}`);
+            let a2=area(lr,br);
+            document.write("<br>Area=",a2);
+            let p2=peri(lr,br);
+            document.write("<br>Perimeter of Rectangle =",p2);
+
+
+        
+            document.write("<br><br>Area and perimeter of cicle:");
+            let r=6;
+            document.write("<br>Radius=",r);
+            let ac=circlearea(r);
+            document.write("<br>Area=",ac);
+            let pc=circleperi(r);
+            document.write("<br>circle peri =",pc);
+    </script>
+</body>
+</html>

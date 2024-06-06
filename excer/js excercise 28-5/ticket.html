@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket</title>
+    <script src="js4.js"></script>
+    
+</head>
+<body style="text-align: center;" onload="f()">
+
+    <h3>
+        TICKET GENERATED..
+    </h3>
+
+    <p> THE PERSON NAMED <span style="font-size: 20px;font-weight: bold;" id="id1"> </span> HAS BOOKED FILM TICKET FOR THE FILM 
+        "<span style="font-size: 20px;font-weight: bold;" id="id2"></span>"</p>
+
+    <br>
+    <p> NO OF TICKETS <span style="font-size: 20px;font-weight: bold;" id="id3"></span></p>
+
+
+    <p id="id1"></p>
+
+    <script>
+
+    let x=localStorage.getItem("NAME");
+    let y=localStorage.getItem("FLIM");
+    let z=localStorage.getItem("TICKET");
+    z=Number.parseInt(z);
+
+
+    document.getElementById("id1").innerHTML=x;
+    document.getElementById("id2").innerHTML=y;
+    document.getElementById("id3").innerHTML=z;
+
+
+
+    </script>
+    
+</body>
+</html>

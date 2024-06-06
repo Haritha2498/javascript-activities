@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Output Method</h1>
+    
+    <h3>1.document.getElementById</h3>
+    <p id="sum"> </p>
+    <button type="button" onclick="document.getElementById('sum') .innerHTML=2+4">try</button> <br>
+    
+    
+    <h3>2.cosole.log</h3>
+    <script>
+        console.log("example")
+    </script>
+    <p>can be seen in console window in inspect</p>
+    
+    <h3>3.document.write</h3>
+    <script>
+        document.write(2+7)
+        
+    </script>
+    <p> using button-deletes the whole page content to show o/p</p>
+    <button type="button" onclick="document.write(2+4)">sum</button>
+    
+    
+    <h3>4.alert</h3>
+    <p>shows o/p in each reloadings</p>
+    <script>
+        alert("page reloading")
+    </script>
+    <button type="button" onclick="alert('reloading using button')">alert</button>
+</body>
+</html>

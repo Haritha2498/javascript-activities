@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Swapping numbers</h2>
+    <h3>before Swapping</h3>
+    <p id="id1"></p>
+    <p id="id2"></p>
+    <h3>after swapping</h3>
+    <p id="id3"></p>
+    <p id="id4"></p>
+    <script>
+        var a=10;
+        var b=20;
+        document.getElementById("id1").innerHTML="a=" + a +"<br><br>b =" +b;
+        
+        var c=a;
+            a=b;
+            b=c;
+        document.getElementById("id3").innerHTML="a=" + a
+        document.getElementById("id4").innerHTML="b=" + b
+    </script>
+
+    <h2>Swapping numbers without temp variable</h2>
+    <h3>before Swapping</h3>
+    <p id="id5"></p>
+    
+    <h3>after swapping</h3>
+    <p id="id6"></p>
+    
+    <script>
+        var x=10;
+        var y=20;
+        document .getElementById("id5").innerHTML="x=" +x + "<br><br>y=" +y
+        x=x+y;
+        y=x-y;
+        x=x-y;
+        document .getElementById("id6").innerHTML="x=" +x + "<br><br>y=" +y
+    </script>
+
+
+    
+
+</body>
+</html>

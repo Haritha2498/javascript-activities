@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body style="font-size: 20px;">
+    <script>
+        let fruits=["Apple","Mango","Pear"];
+        document.write("Element in Array Fruits ="+fruits)
+        document.write("<br>Datatype of fruits = "+typeof fruits);
+        document.write("<br>Is this an array : ",Array.isArray(fruits));
+        document.write("<br>Length of Array = ",fruits.length);
+        document.write("<br>first element : ",fruits[0]);
+        document.write("<br>Second Element : ",fruits[1]);
+        fruits[3]="Kiwi";
+        document.write("<br>Element pushed : ",fruits[3])
+        document.write("<br>Element in Array Fruits ="+fruits);
+        let g="grapes"
+        fruits.push(g);
+        document.write("<br>Element in Array Fruits ="+fruits);
+        let x=fruits.pop();
+        document.write("<br>Element popped :"+x );
+        document.write("<br>Element in Array Fruits ="+fruits);
+        delete(fruits[1]);
+        document.write("<br>Element after deleting [1] ="+fruits);
+        document.write("<br>Second Element : ",fruits[1]);
+        fruits[1]="Orange";
+        document.write("<br>Element in Array Fruits ="+fruits);
+        // fruits[1]=3;
+        // document.write("<br>Second Element : ",fruits[1]);
+        // document.write("<br>element in Array Fruits ="+fruits);
+        let fav_fruit=fruits.slice(1);
+        let fav_fruit1=fruits.slice(1,3);
+        document.write("<br>Elements subarray1 : ",fav_fruit);
+        document.write("<br>Elements subarray2 : ",fav_fruit1);
+        document.write("<br>Index of orange : ",fruits.indexOf("Orange"));
+        document.write("<br>Position of orange : ",fruits.indexOf("Orange")+1);
+
+        
+        document.write("<br>Sorted Array:"+fruits.sort())
+        document.write("<br>Sorted Array in reverse:"+fruits.reverse());
+        document.write("<br>whether kiwi is in this array : ",fruits.includes("Kiwi"));
+        let frt=fruits.toString();
+        document.write("<br>new Array:"+frt);
+        document.write("<br> 1st String : "+frt.charAt(0));
+        document.write("<br>16th String : "+frt.charAt(15));
+        // const myarray=new Array();  declaring a array in run time
+
+    </script>
+</body>
+</html>

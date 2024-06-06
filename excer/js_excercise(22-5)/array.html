@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br>
+    
+    Select a Fruit from the Array:
+    <select name="fruits" id="id1" >
+        <option value="Pear" selected>Pear</option>
+        <option value="Plum">Plum</option>
+        <option value="Peach">Peach</option>
+        <option value="Kiwi">Kiwi</option>
+        <option value="Fig">Fig</option>
+    </select>
+    <br>
+    <input type="button" value="get index" onclick="fun1()">
+    <br> <br>
+    <p id ="pid1"></p>
+    <p id="pid2"></p>
+    <script>
+        function fun1()
+        {
+        let fruit=["Pear","Plum","Peach","Kiwi","Fig"]
+        let z=fun2();
+        document.getElementById("pid1").innerHTML= "fruit Selected :"+z;
+        document.getElementById("pid2").innerHTML="Index Value of "+z+" is : "+ fruit.indexOf(z);
+        
+        }
+        function fun2()
+        {
+            let x=document.getElementById("id1").value;
+            return x;
+        }
+    </script>
+</body>
+</html>

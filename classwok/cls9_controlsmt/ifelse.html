@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If_Else</title>
+</head>
+<body>
+    <br>
+    <!-- Enter first number:
+    <input type="number" id="id1">
+    <br>
+    Enter Second Number:
+    <input type="number" id="id2">
+    <br> -->
+    <p>comparing using 2 num</p>
+    <p id="pid1"></p>
+
+    <p id="pid2"></p>
+    <script>
+    let a=10;
+    let b=15;
+    let c=20;
+
+// to compare two vari
+
+    if(a==b)
+    {
+        document.getElementById("pid1").innerHTML=`Value of a=${a} and b=${b}<br>a==b`;
+    }
+    else
+    {
+        document.getElementById("pid1").innerHTML=`Value of a=${a} and b=${b}<br>a!=b`;
+    }
+
+// to compare three vari
+
+
+if(a<b)
+{
+    document.getElementById("pid2").innerHTML="b is greater than a";
+}
+else
+{
+    document.getElementById("pid2").innerHTML="a is greater than b";
+}
+document.write("comparing using if else if <br><br>");
+let x=4;
+let y=4;
+document.write(`value of x=${x} and y =${y}<br>`)
+if(x>y)
+{
+    document.write("x is greater than y");
+}
+else if(x<y)
+{
+    document.write("x is less than y")
+}
+else
+{
+    document.write("x is equal to y")
+}
+
+
+
+
+</script>
+</body>
+</html>

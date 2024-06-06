@@ -1,0 +1,37 @@
+function fun1()
+{
+    let p=document.getElementById("id1").value;
+    p=Number.parseInt(p);
+    let r=document.getElementById("id2").value;
+    r=Number.parseInt(r);
+    let t=document.getElementById("id3").value;
+    t=Number.parseInt(t);
+    r=r/100;
+    let rate=p*r*t;
+    let amt=p+rate;
+    document.getElementById("pid1").innerHTML="Interest amount :"+rate+" <br> Amount After "+t+" years :"+amt;
+    
+
+}
+function fun2()
+{
+    
+    let p=document.getElementById("id4").value;
+    p=Number.parseInt(p);    
+    let r=document.getElementById("id5").value;
+    r=Number.parseInt(r);   
+    let t=document.getElementById("id6").value;
+    t=Number.parseInt(t);   
+    let n=document.getElementById("id7").value;
+    n=Number.parseInt(n);
+    r=r/100;    
+    let r1=r/n;
+    let r2=r1+1;
+    let r3=n*t;
+    let r4=r2**r3;
+    let amt=p*r4;
+    let rate=amt-p;
+    
+    document.getElementById("pid2").innerHTML="Interest amount : "+rate+"<br> Amount after "+t+" years :"+amt;
+
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal details</title>
+</head>
+<body>
+    Enter the name :
+    <input type="text" id="id1">
+    <br> 
+    Enter the roll no :
+    <input type="number" id="id2">
+    <br>
+    Enter class :
+    <input type="number" id="id3">
+    <br>
+    Enter address :
+    <textarea name="" id="id4" cols="20" rows="3"></textarea>
+    <br>
+
+    <input type="button" value="submit" onclick="fun()">
+    <br>
+    <br> <br>
+    <p id="pid0"></p>
+    <p id="pid1"></p>
+    <p id="pid2"></p>
+    <p id="pid3"></p>
+    <p id="pid4"></p>
+    
+
+
+
+    <script>
+        function fun()
+        {
+            let name=document.getElementById("id1").value;
+            let roll=document.getElementById("id2").value;
+            roll=Number.parseInt(roll);
+        
+            let cls=document.getElementById("id3").value;
+            
+            cls=Number.parseInt(cls);
+            
+            let add=document.getElementById("id4").value;
+
+
+            let student={
+                Name:name,
+                roll:roll,
+                class:cls,
+                Address:add
+            }
+
+        document.getElementById("pid0").innerHTML=" Student Details "
+        document.getElementById("pid1").innerHTML="Student Name : "+student.Name;
+        document.getElementById("pid2").innerHTML="class of student :"+student.class;
+        document.getElementById("pid3").innerHTML="Roll number of the student : "+student.roll;
+        document.getElementById("pid4").innerHTML="Address of student : "+student.Address;
+        }
+    
+    </script>
+</body>
+</html>

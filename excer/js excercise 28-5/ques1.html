@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="text-align: center; margin-top: 50px;font-size: 22px;">
+    Enter the value of x : 
+    <input type="number" id="id1">
+    <br> <br> <br>
+    Enter the value of y :
+    <input type="number" id="id2">
+    <br> <br><br>
+    <input type="button" value="SWAP NUMBER" onclick="swap()">
+    <br>
+
+    <p id="pid1"></p>
+
+
+    <script>
+        function swap()
+        {
+            let x=document.getElementById("id1").value;
+            let y=document.getElementById("id2").value;
+
+            x=Number.parseInt(x);
+            y=Number.parseInt(y);
+
+            x=x+y;
+            y=x-y;
+            x=x-y;
+
+            document.getElementById("pid1").innerHTML=`After Swapping <br>Value of x= ${x} and y = ${y}`
+        }
+    </script>
+</body>
+</html>

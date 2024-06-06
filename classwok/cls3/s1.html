@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="margin-left: 150px; font-size: 20px;">
+    <h2>js operators</h2>
+    <h3>typeof()</h3>
+    <p id="id1"></p>
+    <p id="id2"></p>
+    <h3>Arithmetic</h3>
+    <p id="id3"></p>
+    <p id="id4"></p>
+    <p id="id5"></p>
+    <p id="id6"></p>
+    <h3>comparision</h3>
+    <p id="id7"></p>
+    <p id="id8"></p>
+    <p id="id9"></p>
+    <script >
+        var a=2;
+        var b="hello";
+        document.getElementById("id1").innerHTML="value of a="+a +"<br>"+"type="+typeof(a);
+        document.getElementById("id2").innerHTML="value of b="+b +"<br>"+"type="+typeof(b);
+        var x=10;
+        var y=2;
+        document.getElementById("id3").innerHTML=`value of x=${x}<br>value of y=${y}` ; /displays value using ` /
+        
+        document.getElementById("id4").innerHTML="X+Y="+(x+=y)+"<br><br>X-Y="+(x-=y)+"<br><br>X*Y="+(x*=y)+"<br><br>X/Y="+(x/=y)+"<br><br>X^Y="+(x**y)+"<br><br>X%Y="+(x%y);
+        
+        
+        var l=4;
+        document.getElementById("id5").innerHTML="value of l="+l+"<br>pre increment (++l) : "+(++l)+"<br>post increment (l++) : "+(l++)+"<br>value of l ="+l
+        document.getElementById("id6").innerHTML="value of l="+l+"<br>pre decrement (--l) : "+(--l)+"<br>post decrement (l--) : "+(l--)+"<br>value of l ="+l
+        
+        
+        
+        document.getElementById("id7").innerHTML="Is x and y equal: "+(x==y)+"<br>Is x and y same type : "+ (x===y)+"<br>x < y:"+(x<y)+"<br>x > y:"+(x>y);
+        
+        
+        
+        var p=1,q=5,r=6,s=8;
+        let t=(p<q&&r<s)
+        document.getElementById("id8").innerHTML= `value of p=${p} q=${q} r=${r} s=${s}`+"<br>logical And : "+t +"<br>logical Or : "+(p>q||r<s);
+        
+        
+        t=(p&q)
+        document.write ("bitwise  And : ",t);
+        document.write ("<br>bitwise  or : ",(p|q));
+        document.write ("<br>bitwise not:", ~ q)
+        
+
+
+        document.write ("<br><br>Ternary operator");
+        let age=17;
+        let age1=25;
+        let vote=(age<18)?"not Eligible":"Eligible";
+        let vote1=(age1<18)?"not Eligible":"Eligible";
+        document.write(`<br>person 1 ${vote} to vote`);
+        document.write(`<br>person 2 ${vote1} to vote`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>javascript variables</h2>
+    <p>1.using no declaration</p>
+    <p id="id1"></p>
+    <script>
+        a=1;
+        b=2;
+        c=a+b;
+        document.getElementById("id1").innerHTML=c
+    </script>
+
+
+    <p>2.using var</p>
+    <p id="id2"></p>
+    <script>
+        var a=5;
+        var b=2;
+        var c=a+b;
+        document.getElementById("id2").innerHTML=c
+    </script>
+
+
+    <p>3.using let</p>
+    <p id="id3"></p>
+    <script>
+        let p=6;
+        let q=2;
+        let r=p+q;
+        document.getElementById("id3").innerHTML=r
+    </script>
+    <p>4.using const</p>
+    <p id="id4"></p>
+    <script>
+        const x=12;
+        document.getElementById("id4").innerHTML=x
+    </script>
+
+    <h3>scope using let</h3>
+    <p>value of i</p>
+    <p id="id5"></p>
+    <p>inside a function</p>
+    <p id="id6"></p>
+    <p>outside a function</p>
+    <p id="id7"></p>
+    <script>
+        let i=20;
+        document.getElementById("id5").innerHTML=i
+        {
+            let i=10;
+            
+            document.getElementById("id6").innerHTML=i
+        }
+        
+        document.getElementById("id7").innerHTML=i
+    </script>
+
+
+
+    <h3>scope using var</h3>
+    <p>value of j</p>
+    <p id="id8"></p>
+    <p>inside a function</p>
+    <p id="id9"></p>
+    <p>outside a function</p>
+    <p id="id10"></p>
+    <script>
+        var j=25;
+        document.getElementById("id8").innerHTML=j
+        {
+            var j=15;
+            document.getElementById("id9").innerHTML=j
+        }
+        document.getElementById("id10").innerHTML=j;
+    </script>
+
+
+    <script>
+        
+    </script>
+</body>
+</html>

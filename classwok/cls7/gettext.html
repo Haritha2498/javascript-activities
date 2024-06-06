@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter your name :
+    <input type="text" id="id1" onchange="text()">
+</body>
+Entered name:
+<p id="pid1"></p>
+Enter the registration number:
+<input type="number" id="id2" onchange="text1()">
+<p id="pid2"></p>
+Enter First name:
+<input type="text" id="id3" >
+</br><br>
+Enter second  name:
+<input type="text" id="id4" >
+
+<button id="id5" onclick="name1()">submit</button>
+<p id="pid3"></p>
+<script>
+    function text()
+    {
+        let x=document.getElementById("id1").value;
+        document.getElementById("pid1").innerHTML= x+ "  <br>type of data = "+typeof x;
+    
+    }
+    function text1()
+    {
+        let x=document.getElementById("id2").value;
+        document.getElementById("pid2").innerHTML= x+ "  <br>type of data = "+typeof x;
+    
+    }
+
+    function name1()
+    {
+        let fn=document.getElementById("id3").value;
+        let ln=document.getElementById("id4").value;
+        
+        let name=fn+"  "+ln;
+        document.getElementById("pid3").innerHTML=name;
+
+    }
+</script>
+</body>
+</html>
